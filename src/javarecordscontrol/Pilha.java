@@ -26,6 +26,10 @@ public class Pilha<T> {
         return this.topo == this.elementos.length -1;
     }
     
+    public void Clear(){
+        this.elementos = (T[]) new Object[10];
+        this.topo = -1;
+    }
     
     public boolean push(T dado){
         if(!this.isFull()){
@@ -47,13 +51,15 @@ public class Pilha<T> {
         return this.elementos[this.topo];
     }
     
+    public int size(){
+        return this.topo + 1;
+    }
     
     
     @Override
     public String toString(){
         
-        StringBuilder retorno =
-                new StringBuilder("Topo\n");
+        StringBuilder retorno = new StringBuilder("\tTopo\n");
         for(int i = this.topo ; i>=0; i--)
             retorno.append(this.elementos[i]+"\n");
         

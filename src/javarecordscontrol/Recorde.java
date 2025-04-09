@@ -38,8 +38,8 @@ public class Recorde {
                 this.dataRecorde.format
               (DateTimeFormatter.ofPattern("dd/MM/yyyy"));
         
-        return "Nome:"+this.nome + " Tempo:" +this.tempo
-                 + " Data:"+dataFormatada;
+        return "Nome: "+this.nome + " - Tempo: " +this.tempo
+                 + " -  Data: "+dataFormatada;
     }
     
     
