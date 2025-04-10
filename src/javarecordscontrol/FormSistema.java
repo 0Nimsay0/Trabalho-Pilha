@@ -342,6 +342,7 @@ public class FormSistema extends javax.swing.JFrame {
         minhaPilha.Clear();
         listAux.setText("");
         listPilha.setText("");
+        salvarDados();
     }//GEN-LAST:event_btnLimparActionPerformed
 
     private void btnFecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFecharActionPerformed
